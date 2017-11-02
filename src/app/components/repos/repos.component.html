@@ -1,0 +1,13 @@
+<app-search (onSubmit)="search($event)"></app-search>
+<div class="repos">
+  <div *ngFor="let repo of repos"
+    class="repo"
+  >
+    <h2><a [href]="repo.html_url" target="_blank">{{repo.name}}</a></h2>
+    <p *ngIf="repo.fork" class="fork-name">Forked from {{repo.forks_url}}</p>
+    <p>{{repo.description}}</p>
+    <p class="metas">
+      <span class="updated-at">Updated {{repo.updated_at|fromNow}}</span>
+    </p>
+  </div>
+</div>
