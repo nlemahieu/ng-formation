@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bulma";
+
+$grey: #24292e;
+
+body { color: $grey; }
+.main { text-align: center; }
+.container {
+  margin: 24px auto; width: 95%; max-width: 920px;
+  text-align: left;
+}
+
+.main-header { min-height: 54px; background-color: $grey; }
+
+[type="search"] { padding: 5px 10px; width: 100%; border-radius: 3px; border: 1px solid #ccc; }
+
+.repo {
+  padding: 24px 0; border-bottom: 1px solid #ccc;
+
+  h2 { font-size: 1.3em; font-weight: bold; }
+  p { margin: 5px 0; }
+  .fork-name { font-size: 0.8em; color: #586069; }
+  .metas { font-size: .8em; color: #586069; }
+}
